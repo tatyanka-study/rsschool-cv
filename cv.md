@@ -15,11 +15,11 @@
 **Discord:**[Tatyana](https://discordapp.com/users/tatyana_84061)
 
 
-#### About Me
+### About Me
 My main education is an Economist. I work as a leading economist in a large department. Since 2016, I have been studying part-time and working freelance as a front-end developer and for 7 months I was engaged in advertising on Google, Facebook and Instagram. I love when work requires and promotes the development of professional and personal skills.
 
 
-#### Skills
+### Skills
 
 - HTML5 + Emmet
 - CSS3, CSS Grid, CSS Flex, LESS
@@ -35,7 +35,7 @@ My main education is an Economist. I work as a leading economist in a large depa
 
 
 ---
-#### Code example
+### Code example
 
 _**Exercise:**_
 Write a script for "Guess the Number Game":
