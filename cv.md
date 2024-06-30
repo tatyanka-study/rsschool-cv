@@ -52,28 +52,7 @@ Write a script for "Guess the Number Game":
 </head>
 <body>   
     <script>
-        let randomValue = Math.floor(Math.random() * 101);
-        let userNumber = 0;
-        let count = 0;  
-
-        do {           
-            let userNumber = prompt("I thought of a random number from 0 to 100. Guess it");
-            count++;
-
-            if (isNaN(userNumber)) {
-                alert("You did not enter a number. Be careful!");                    
-            }
-            else if (userNumber < randomValue) {
-                alert(`I wished for a meaning greater than ${userNumber}`);
-            }
-            else if (userNumber > randomValue) {
-                alert(`I guessed a value less than ${userNumber}`);
-            }
-            else{
-                alert(`Right! Hidden meaning ${userNumber}. You guessed it in ${count} tries.`);
-            }
-        }
-        while (userNumber !== randomValue);        
+             
     </script>
 </body>
 </html>
