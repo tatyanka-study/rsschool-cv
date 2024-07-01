@@ -47,7 +47,7 @@ Write a script for "Guess the Number Game":
 <body>
     <div class="input-panel">
         <input type="text" id="task-name-input">
-        <button id="add-task-btn">Добавить задачу</button>
+        <button id="add-task-btn">Add new task</button>
     </div>
 
     <div class="task-list">
@@ -105,8 +105,6 @@ Write a script for "Guess the Number Game":
     </script>
 </body>
 ```
-
-
 ---
 
 ### Professional Experience
