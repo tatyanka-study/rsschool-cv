@@ -7,11 +7,11 @@
 
 #### My Contacts
 
-**Phone:** +38 (097) 79 27 605
-**Location:** Dnipro, Ukraine
-**Email:** sazonko.tatyana@gmail.com
-**LinkedIn:** [My LinkedIn](https://www.linkedin.com/in/tatyana-valchuk-19701a192/)
-**GitHub:** [tatyanka-study](https://github.com/tatyanka-study)
+**Phone:** +38 (097) 79 27 605  
+**Location:** Dnipro, Ukraine  
+**Email:** sazonko.tatyana@gmail.com  
+**LinkedIn:** [My LinkedIn](https://www.linkedin.com/in/tatyana-valchuk-19701a192/)  
+**GitHub:** [tatyanka-study](https://github.com/tatyanka-study)  
 **Discord:**[Tatyana](https://discordapp.com/users/tatyana_84061)
 
 
@@ -44,66 +44,33 @@ Write a script for "Guess the Number Game":
 3. The script guesses the number only once at the beginning of the game and this number does not change until the end of the game.
 
 ```
-<body>
-    <div class="input-panel">
-        <input type="text" id="task-name-input">
-        <button id="add-task-btn">Add new task</button>
-    </div>
+<script>
+        let randomValue = Math.floor(Math.random() * 101);
+        let userNumber = 0;
+        let count = 0;  
 
-    <div class="task-list">
-        <p id="start-message">Нет новых задач</p>
-    </div>
+        do {           
+            let userNumber = prompt("I thought of a random number from 0 to 100. Guess it");
+            count++;
 
-    <template id="template">
-        <div class="task">
-            <input type="checkbox">
-            <p>{{.}}</p>
-        </div>
-    </template>
-
-    <script src="mustache.min.js"></script>
-
-    <script>       
-        let taskNameInput = document.querySelector("#task-name-input");
-        let addTaskButton = document.querySelector("#add-task-btn");
-        let startMessage = document.querySelector("#start-message");
-        let taskList = document.querySelector(".task-list");
-
-        addTaskButton.addEventListener("click", addTaskHandler);
-        taskList.addEventListener("click", changeTaskState);
-
-        function createTask(text) {
-            let template = document.querySelector("#template").innerHTML;
-           
-            let newElement = Mustache.render(template, taskNameInput.value);            
-            taskList.innerHTML +=newElement;           
-        }
-
-        function changeTaskState(e) {
-            if (e.target.nodeName != "input" && e.target.type != "checkbox") {
-                return;
+            if (isNaN(userNumber)) {
+                alert("You did not enter a number. Be careful!");                    
             }
-
-            if (e.target.checked) {
-                e.target.parentElement.classList.add("completed");
-            } else {
-                e.target.parentElement.classList.remove("completed");
+            else if (userNumber < randomValue) {
+                alert(`I wished for a meaning greater than ${userNumber}`);
+            }
+            else if (userNumber > randomValue) {
+                alert(`I guessed a value less than ${userNumber}`);
+            }
+            else if (userNumber == false) {
+                alert(`I understand. You don\`t want to play`);
+            }
+            else{
+                alert(`Right! Hidden meaning ${userNumber}. You guessed it in ${count} tries.`);
             }
         }
-
-        function addTaskHandler() {
-            if (taskNameInput.value) {
-                if (!startMessage.hidden) startMessage.hidden = true;
-
-              createTask(taskNameInput.value);
-                //taskList.append(newTask);
-                taskNameInput.value = "";
-            } else {
-                alert("введите имя задачи");
-            }
-        }
+        while (userNumber !== randomValue);        
     </script>
-</body>
 ```
 ---
 
