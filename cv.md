@@ -42,21 +42,70 @@ Write a script for "Guess the Number Game":
 1. The essence of the game is to guess the number predicted by the script in fewer attempts.
 2. Every time the player tries to guess a number, the script displays a hint - the script guessed a smaller or larger number.
 3. The script guesses the number only once at the beginning of the game and this number does not change until the end of the game.
+
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 5</title>
-</head>
-<body>   
-    <script>
-             
+<body>
+    <div class="input-panel">
+        <input type="text" id="task-name-input">
+        <button id="add-task-btn">Добавить задачу</button>
+    </div>
+
+    <div class="task-list">
+        <p id="start-message">Нет новых задач</p>
+    </div>
+
+    <template id="template">
+        <div class="task">
+            <input type="checkbox">
+            <p>{{.}}</p>
+        </div>
+    </template>
+
+    <script src="mustache.min.js"></script>
+
+    <script>       
+        let taskNameInput = document.querySelector("#task-name-input");
+        let addTaskButton = document.querySelector("#add-task-btn");
+        let startMessage = document.querySelector("#start-message");
+        let taskList = document.querySelector(".task-list");
+
+        addTaskButton.addEventListener("click", addTaskHandler);
+        taskList.addEventListener("click", changeTaskState);
+
+        function createTask(text) {
+            let template = document.querySelector("#template").innerHTML;
+           
+            let newElement = Mustache.render(template, taskNameInput.value);            
+            taskList.innerHTML +=newElement;           
+        }
+
+        function changeTaskState(e) {
+            if (e.target.nodeName != "input" && e.target.type != "checkbox") {
+                return;
+            }
+
+            if (e.target.checked) {
+                e.target.parentElement.classList.add("completed");
+            } else {
+                e.target.parentElement.classList.remove("completed");
+            }
+        }
+
+        function addTaskHandler() {
+            if (taskNameInput.value) {
+                if (!startMessage.hidden) startMessage.hidden = true;
+
+              createTask(taskNameInput.value);
+                //taskList.append(newTask);
+                taskNameInput.value = "";
+            } else {
+                alert("введите имя задачи");
+            }
+        }
     </script>
 </body>
-</html>
 ```
+
 
 ---
 
@@ -72,6 +121,7 @@ Write a script for "Guess the Number Game":
    - Copywriting (freelance)
 - 2010 – 2024
    - Economist
+
 ---
 
 ### Education
