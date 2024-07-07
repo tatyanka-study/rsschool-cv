@@ -1,6 +1,6 @@
 # Sazonko Tatyana 
 
-![Sazonko Tatyana photo](images/sazonko-tatyana-frontend-developer.jpg) 
+![Sazonko Tatyana photo](assets/images/sazonko-tatyana-frontend-developer.jpg) 
 
 ### *Junior Frontend Developer*
 ---
