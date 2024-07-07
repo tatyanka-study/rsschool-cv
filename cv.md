@@ -106,6 +106,6 @@ Write a script for "Guess the Number Game":
 
 ### Languages
 1. English - Level B1
-![EPAM Eenglish Level test result](images/EPAM-english-test-B1.png)
+![EPAM Eenglish Level test result](assets/images/EPAM-english-test-B1.png)
 2. Ukrainian - native
 3. Russian - proficiency
