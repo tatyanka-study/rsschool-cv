@@ -84,39 +84,95 @@
                             <p>My main education is an Economist. I work as a leading economist in a large department. Since 2016, I have been studying part-time and working freelance as a front-end developer and for 7 months I was engaged in advertising on Google, Facebook and Instagram. I love when work requires and promotes the development of professional and personal skills.</p>
                         </section>
                         <section class="experience" id="experience">
-                            <h3>My Professional Experience</h3>
+                            <h3>Professional Experience</h3>
+                            <hr>
+                            <ul>
+                                <li>2022 - 2023
+                                    <ul>
+                                    <li>several small applications when I was taking a Frontend course</li>
+                                    </ul>
+                                </li>
+                                <li>2021
+                                    <ul>
+                                    <li>Facebook, Instagram advertising (freelance)</li>
+                                    </ul>
+                                </li>
+                                <li>2016 – 2020
+                                    <ul>
+                                    <li>Creating sites (freelance)</li>
+                                    <li>Writing and creating sites on CMS, taking into account SEO requirements</li>
+                                    </ul>
+                                </li>
+                                <li>2010 – 2011
+                                    <ul>
+                                    <li>Copywriting (freelance)</li>
+                                    </ul>
+                                </li>
+                                <li>2010 – 2024
+                                    <ul>
+                                    <li>Economist</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="code" id="code">
+                            <h3>Code example</h3>
                             <hr>
                             <p><span>Exercise:</span> Write a script for “Guess the Number Game”:</p>
-                            <ol>
+                            <!-- <ol>
                                 <li>The essence of the game is to guess the number predicted by the script in fewer attempts.</li>
                                 <li>Every time the player tries to guess a number, the script displays a hint - the script guessed a smaller or larger number.</li>
                                 <li>The script guesses the number only once at the beginning of the game and this number does not change until the end of the game.</li>
-                            </ol>
-                            <pre>
-                                <code>                                   
-                                    class MySum {
-                                        constructor(initialValue = 42) {
-                                            this.sum = initialValue;
-                                        }                        
-                                        add(num) {
-                                            this.sum += num;
-                                            return this;
-                                        }
-                                    }
-                        
-                                    const newSum1 = new MySum();
-                                    const nextSum1 = newSum1.add(5).sum;
-                        
-                                    const newSum2 = new MySum(5);
-                                    const nextSum2 = newSum2.add(6).add(8).add(22).sum;
-                        
-                                    document.write(nextSum1 + '<br>');
-                                    document.write(nextSum2 + '<br>');
-                        
-                                    console.log(nextSum1);
-                                    console.log(nextSum2);                                 
-                                </code>
-                            </pre>                
+                            </ol> -->
+<!-- <pre>
+    <code>
+class MySum {
+    constructor(initialValue = 42) {
+        this.sum = initialValue;
+    }
+
+    add(num) {
+        this.sum += num;
+        return this;
+    }
+}
+
+const newSum = new MySum(5);
+const nextSum = newSum.add(6).add(8).add(22).sum;
+
+document.write(nextSum);
+    </code>
+</pre> -->
+<pre>
+    <code>
+let randomValue = Math.floor(Math.random() * 101);
+let userNumber = 0;
+let count = 0;  
+
+    do {           
+        let userNumber = prompt("I thought of a random number from 0 to 100. Guess it");
+        count++;
+
+        if (isNaN(userNumber)) {
+            alert("You did not enter a number. Be careful!");                    
+        }
+        else if (userNumber < randomValue) {
+            alert(`I wished for a meaning greater than ${userNumber}`);
+        }
+        else if (userNumber > randomValue) {
+            alert(`I guessed a value less than ${userNumber}`);
+        }
+        else if (userNumber == false) {
+            alert(`I understand. You don\`t want to play`);
+        }
+        else{
+            alert(`Right! Hidden meaning ${userNumber}. You guessed it in ${count} tries.`);
+        }
+    }
+    while (userNumber !== randomValue); 
+    </code>
+</pre>
+                                           
                         </section>
                         <section class="education" id="education">
                             <h3>Education</h3>

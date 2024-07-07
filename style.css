@@ -30,13 +30,18 @@ body {
 main .container {
     background-color: #ffffff;
 }
+
 .its-me {
     display: flex;    
 }
 
+.logo img {
+    border: 5px solid #1B8E92;
+    border-radius: 35px 0;
+}
+
 section {
-    padding: 16px;
-    border: 1px solid green;
+    padding: 16px;   
 }
 
 hr {
@@ -114,17 +119,12 @@ a {
 }
 
 pre {
-    background-color: #f5f5f5;
-    padding: 10px;
-    border: 1px solid #ddd;
+    background-color: #f7f1f1;
+    color: cadetblue;
+    padding: 15px;
+    border-radius: 5px;
     overflow: auto;
-}
-code {
-    font-family: monospace;
-    color: #c7254e;
-    background-color: #f9f2f4;
-    padding: 2px 4px;
-    border-radius: 4px;
+    max-width: 100%;
 }
 
 .footer {
@@ -136,6 +136,5 @@ code {
 
 .link-github {
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
 }
