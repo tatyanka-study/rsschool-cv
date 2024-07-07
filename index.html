@@ -3,17 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML, CSS &amp; Git Basics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>CV Sazonko Tatyana</title>
 </head>
 <body>
-    <header>
-        <div class="avatar">
-            <h1>Sazonko Tatyana</h1>
-            <img src="images/sazonko-tatyana-frontend-developer.jpg" alt="My photo avatar">
-        </div>
-
-    </header>
-    <main></main>
-    <footer></footer>
+    <div class="wrap">
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav-list">
+                      <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                      <li class="nav-item"><a href="#about-me" class="nav-link">About Me</a></li>
+                      <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                      <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                      <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                      <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                      <li class="nav-item"><a href="#Languages" class="nav-link">Languages</a></li>
+                    </ul>
+                  </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <section class="its-me">
+                    <div class="logo">
+                        <img src="assets/images/sazonko-tatyana-frontend-developer.jpg" alt="photo Sazonko Tatyana">
+                    </div>
+                    <div class="my-name">
+                        <h1>Sazonko Tatyana</h1>
+                        <h2>Frontend Developer</h2>
+                    </div>
+                </section>
+                <section class="content">
+                    <div class="left">               
+                        <section class="contacts" id="contacts">
+                            <h3>My Contacts</h3>
+                            <hr>
+                            <ul class="my-contacts">
+                                <li><i class="fa-solid fa-phone"></i>+38 (097) 79 27 605</li>
+                                <li><i class="fa-solid fa-location-dot"></i>Dnipro, Ukraine</li>
+                                <li><i class="fa-regular fa-envelope"></i>sazonko.tatyana@gmail.com</li>
+                                <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/tatyana-valchuk-19701a192/" target="_blank">LinkedIn</a></li>
+                                <li><i class="fa-brands fa-github"></i><a href="https://github.com/tatyanka-study" target="_blank">GitHub</a></li>
+                                <li><i class="fa-brands fa-discord"></i><a href="https://discord.com/users/tatyana_84061" target="_blank">Discord</a></li>
+                            </ul>
+                        </section>
+                        <section class="skills" id="skills">
+                            <h3>Skills</h3>
+                            <hr>
+                            <ul class="my-skills">
+                                <li>HTML5 + Emmet</li>
+                                <li>CSS3, CSS Grid, CSS Flex, LESS</li>
+                                <li>jQuery, Bootstrap</li>
+                                <li>CMS: WordPress, Tilda, Joomla</li>
+                                <li>JavaScript + DOM</li>
+                                <li>React</li>
+                                <li>Git, GitHub</li>
+                                <li>Photoshop, Figma</li>
+                                <li>SEO</li>
+                                <li>Google Ads, Google analytics</li>
+                                <li>Facebook, Instagram advertising</li>
+                            </ul>                    
+                        </section> 
+                        <section class="Languages" id="Languages">
+                            <h3>Languages</h3>
+                            <hr>
+                            <ol>
+                                <li>English - Level B1</li>
+                                <li>Ukrainian - native</li>
+                                <li>Russian - proficiency</li>
+                            </ol>                                
+                        </section>              
+                    </div>                
+                    <div class="right">     
+                        <section class="about-me" id="about-me">
+                            <h3>About Me</h3>
+                            <hr>
+                            <p>My main education is an Economist. I work as a leading economist in a large department. Since 2016, I have been studying part-time and working freelance as a front-end developer and for 7 months I was engaged in advertising on Google, Facebook and Instagram. I love when work requires and promotes the development of professional and personal skills.</p>
+                        </section>
+                        <section class="experience" id="experience">
+                            <h3>My Professional Experience</h3>
+                            <hr>
+                            <p><span>Exercise:</span> Write a script for “Guess the Number Game”:</p>
+                            <ol>
+                                <li>The essence of the game is to guess the number predicted by the script in fewer attempts.</li>
+                                <li>Every time the player tries to guess a number, the script displays a hint - the script guessed a smaller or larger number.</li>
+                                <li>The script guesses the number only once at the beginning of the game and this number does not change until the end of the game.</li>
+                            </ol>
+                            <pre>
+                                <code>                                   
+                                    class MySum {
+                                        constructor(initialValue = 42) {
+                                            this.sum = initialValue;
+                                        }                        
+                                        add(num) {
+                                            this.sum += num;
+                                            return this;
+                                        }
+                                    }
+                        
+                                    const newSum1 = new MySum();
+                                    const nextSum1 = newSum1.add(5).sum;
+                        
+                                    const newSum2 = new MySum(5);
+                                    const nextSum2 = newSum2.add(6).add(8).add(22).sum;
+                        
+                                    document.write(nextSum1 + '<br>');
+                                    document.write(nextSum2 + '<br>');
+                        
+                                    console.log(nextSum1);
+                                    console.log(nextSum2);                                 
+                                </code>
+                            </pre>                
+                        </section>
+                        <section class="education" id="education">
+                            <h3>Education</h3>
+                            <hr>
+                            <ul>
+                                <li><span>2024</span> RS School Course - JS/FE Pre-School 2024Q2</li>
+                                <li><span>2022</span> During 2022, to update and deepen my previous knowledge, I passed Frontend course</li>
+                                <li><span>2021</span> Different advertising courses</li>
+                                <li><span>2020</span> DPRO FREE WORK - сreating sites on CMS Tilda</li>
+                                <li><span>2016 - 2017</span> Computer Academy STEP - сreating and promotion of Web Projects</li>
+                                <li><span>2005 - 2010</span> Dnepropetrovsk National University named after O. Gonchar - specialty accounting and audit</li>
+                            </ul>                        
+                        </section>                        
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="container footer">
+                <div>
+                    <a href="https://rs.school/courses/javascript-ru" target="_blank">
+                        <img src="assets/svg/rs-school-logo.svg" alt="rs school logo" width="50%" height="auto">
+                    </a>
+                </div>
+                <div>
+                    <p>2024</p>
+                </div>
+                <div>
+                    <a href="https://github.com/tatyanka-study" class="link-github" target="_blank">
+                        <img src="assets/svg/icons8-github-48.svg" alt="My GITHUB" width="60px" height="auto">
+                        <p>My GITHUB</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
