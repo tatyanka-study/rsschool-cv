@@ -29,7 +29,9 @@
             <div class="container">
                 <section class="its-me">
                     <div class="logo">
-                        <img src="assets/images/sazonko-tatyana-frontend-developer.jpg" alt="photo Sazonko Tatyana">
+                        <div class="img-wrapper">
+                            <img src="assets/images/sazonko-tatyana-frontend-developer.jpg" alt="photo Sazonko Tatyana" width="200" height="263">
+                        </div>
                     </div>
                     <div class="my-name">
                         <h1>Sazonko Tatyana</h1>
@@ -41,7 +43,7 @@
                         <section class="contacts" id="contacts">
                             <h3>My Contacts</h3>
                             <hr>
-                            <ul class="my-contacts">
+                            <ul>
                                 <li><i class="fa-solid fa-phone"></i>+38 (097) 79 27 605</li>
                                 <li><i class="fa-solid fa-location-dot"></i>Dnipro, Ukraine</li>
                                 <li><i class="fa-regular fa-envelope"></i>sazonko.tatyana@gmail.com</li>
@@ -53,28 +55,28 @@
                         <section class="skills" id="skills">
                             <h3>Skills</h3>
                             <hr>
-                            <ul class="my-skills">
-                                <li>HTML5 + Emmet</li>
-                                <li>CSS3, CSS Grid, CSS Flex, LESS</li>
-                                <li>jQuery, Bootstrap</li>
-                                <li>CMS: WordPress, Tilda, Joomla</li>
-                                <li>JavaScript + DOM</li>
-                                <li>React</li>
-                                <li>Git, GitHub</li>
-                                <li>Photoshop, Figma</li>
-                                <li>SEO</li>
-                                <li>Google Ads, Google analytics</li>
-                                <li>Facebook, Instagram advertising</li>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i>HTML5 + Emmet</li>
+                                <li><i class="fa-solid fa-check"></i>CSS3, CSS Grid, CSS Flex, LESS</li>
+                                <li><i class="fa-solid fa-check"></i>jQuery, Bootstrap</li>
+                                <li><i class="fa-solid fa-check"></i>CMS: WordPress, Tilda, Joomla</li>
+                                <li><i class="fa-solid fa-check"></i>JavaScript + DOM</li>
+                                <li><i class="fa-solid fa-check"></i>React</li>
+                                <li><i class="fa-solid fa-check"></i>Git, GitHub</li>
+                                <li><i class="fa-solid fa-check"></i>Photoshop, Figma</li>
+                                <li><i class="fa-solid fa-check"></i>SEO</li>
+                                <li><i class="fa-solid fa-check"></i>Google Ads, Google analytics</li>
+                                <li><i class="fa-solid fa-check"></i>Facebook, Instagram advertising</li>
                             </ul>                    
                         </section> 
-                        <section class="Languages" id="Languages">
+                        <section class="languages" id="languages">
                             <h3>Languages</h3>
                             <hr>
-                            <ol>
-                                <li>English - Level B1</li>
-                                <li>Ukrainian - native</li>
-                                <li>Russian - proficiency</li>
-                            </ol>                                
+                            <ul>
+                                <li><i class="fa-solid fa-globe"></i>English - Level B1</li>
+                                <li><i class="fa-solid fa-globe"></i>Ukrainian - native</li>
+                                <li><i class="fa-solid fa-globe"></i>Russian - proficiency</li>
+                            </ul>                                
                         </section>              
                     </div>                
                     <div class="right">     
@@ -87,44 +89,34 @@
                             <h3>Professional Experience</h3>
                             <hr>
                             <ul>
-                                <li>2022 - 2023
-                                    <ul>
-                                    <li>several small applications when I was taking a Frontend course</li>
-                                    </ul>
+                                <li>
+                                    <span>2022 - 2023</span>
+                                    Several small applications when I was taking a Frontend course
                                 </li>
-                                <li>2021
-                                    <ul>
-                                    <li>Facebook, Instagram advertising (freelance)</li>
-                                    </ul>
+                                <li>
+                                    <span>2021</span>
+                                    Facebook, Instagram advertising (freelance)
                                 </li>
-                                <li>2016 – 2020
-                                    <ul>
-                                    <li>Creating sites (freelance)</li>
-                                    <li>Writing and creating sites on CMS, taking into account SEO requirements</li>
-                                    </ul>
+                                <li>
+                                    <span>2016 – 2020</span>
+                                    Creating sites (freelance)<br/>
+                                    Writing and creating sites on CMS, taking into account SEO requirements
                                 </li>
-                                <li>2010 – 2011
-                                    <ul>
-                                    <li>Copywriting (freelance)</li>
-                                    </ul>
+                                <li>
+                                    <span>2010 – 2011</span>
+                                    Copywriting (freelance)
                                 </li>
-                                <li>2010 – 2024
-                                    <ul>
-                                    <li>Economist</li>
-                                    </ul>
+                                <li>
+                                    <span>2010 – 2024</span>
+                                    Economist
                                 </li>
                             </ul>
                         </section>
                         <section class="code" id="code">
                             <h3>Code example</h3>
                             <hr>
-                            <p><span>Exercise:</span> Write a script for “Guess the Number Game”:</p>
-                            <!-- <ol>
-                                <li>The essence of the game is to guess the number predicted by the script in fewer attempts.</li>
-                                <li>Every time the player tries to guess a number, the script displays a hint - the script guessed a smaller or larger number.</li>
-                                <li>The script guesses the number only once at the beginning of the game and this number does not change until the end of the game.</li>
-                            </ol> -->
-<!-- <pre>
+                            <p><span>Exercise:</span> Implementation pattern Chain of responsibility:</p>                           
+<pre>
     <code>
 class MySum {
     constructor(initialValue = 42) {
@@ -141,35 +133,6 @@ const newSum = new MySum(5);
 const nextSum = newSum.add(6).add(8).add(22).sum;
 
 document.write(nextSum);
-    </code>
-</pre> -->
-<pre>
-    <code>
-let randomValue = Math.floor(Math.random() * 101);
-let userNumber = 0;
-let count = 0;  
-
-    do {           
-        let userNumber = prompt("I thought of a random number from 0 to 100. Guess it");
-        count++;
-
-        if (isNaN(userNumber)) {
-            alert("You did not enter a number. Be careful!");                    
-        }
-        else if (userNumber < randomValue) {
-            alert(`I wished for a meaning greater than ${userNumber}`);
-        }
-        else if (userNumber > randomValue) {
-            alert(`I guessed a value less than ${userNumber}`);
-        }
-        else if (userNumber == false) {
-            alert(`I understand. You don\`t want to play`);
-        }
-        else{
-            alert(`Right! Hidden meaning ${userNumber}. You guessed it in ${count} tries.`);
-        }
-    }
-    while (userNumber !== randomValue); 
     </code>
 </pre>
                                            
@@ -198,7 +161,7 @@ let count = 0;
                     </a>
                 </div>
                 <div>
-                    <p>2024</p>
+                    <p class="created-in">Created in 2024</p>
                 </div>
                 <div>
                     <a href="https://github.com/tatyanka-study" class="link-github" target="_blank">

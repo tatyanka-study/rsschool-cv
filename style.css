@@ -12,6 +12,7 @@ body {
     background-color:#e5dfdf94;
     margin: 0 auto;
     font-size: 16px;
+    font-family: Arial;
 }
 
 .wrap {
@@ -19,6 +20,10 @@ body {
     flex-direction: column;
     max-width: 1024px;    
     margin: 0 auto;    
+}
+
+header .container {
+    border-bottom: 1px solid bisque;
 }
 
 .container {
@@ -32,20 +37,45 @@ main .container {
 }
 
 .its-me {
-    display: flex;    
+    display: flex;   
 }
 
-.logo img {
-    border: 5px solid #1B8E92;
-    border-radius: 35px 0;
+.logo {
+    width: 30%;
+    background-color: #1B8E92;
+    padding-left: 50px;
+    border-right: 1px solid bisque; 
 }
 
-section {
-    padding: 16px;   
+.img-wrapper {
+    height: 263px;
+    background-color: bisque;
+    margin: 50px auto;
+    border-radius: 50px 0 0 50px;
+    overflow: hidden;
+    border: 5px solid bisque;
+    box-sizing: border-box;
+}
+
+.my-name {
+    padding: 16px;
+    margin: 50px auto;
+    width: 70%;
+    background-color: bisque;
+    height: 263px;
+}
+
+.my-name h1 {
+    font-size: 50px;
+    color: #1B8E92;
+}
+
+.my-name h2 {
+    color: #1B8E92;
 }
 
 hr {
-    width: 50%;
+    width: 150px;
     height: 4px;
     margin-bottom: 15px;
     background-color: #1B8E92;
@@ -55,29 +85,39 @@ h3 {
     font-size: 20px;
 }
 
-.my-skills {
-    list-style: disc;
-}
-
 .content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    line-height: 25px;
+}
+
+.content section {
+    margin-bottom: 20px;
 }
 
 .left {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 30%;
+    background-color: #1B8E92;
+    padding: 16px;
+    border-right: 1px solid bisque;
 }
 
 .right {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 70%;
+    padding: 16px;
 }
 
-h3 {
+.left h3 {
+    color: bisque;
+    text-decoration: dotted;
+}
+
+.right h3 {
     color: #1B8E92;
     text-decoration: dotted;
 }
@@ -89,33 +129,40 @@ span {
 .nav {
     display: flex;
     align-items: center;
-    height: 65px;
     text-align: center;
     margin: 0 auto;
     font-size: 22px;
     font-weight: 400;
 }
 
-.nav-list {
+.nav-list { 
+    height: 65px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    height: 100%; 
 }
 
 .nav-item {
-    margin-right: 25px;
+    padding: 15px 0;
 }
 
 ul {
     list-style: none;
 }
 
-li {
-    margin-bottom: 15px;
+.nav-item a {
+    padding: 15px;
+    text-decoration: none;
+    color: #ffffff;
 }
 
-a {
-    text-decoration: none;
-    color: azure;
+a:link {
+    color: #ffffff;
+}
+
+.nav-item a:hover {   
+    color: bisque;
 }
 
 pre {
@@ -132,9 +179,29 @@ pre {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
+    border-top: 1px solid bisque;
+}
+
+.created-in {
+    color: #ffffff;
+    font-weight: bold;;
 }
 
 .link-github {
     display: flex;
     align-items: center;    
+}
+
+.right ul li {
+    line-height: 30px;
+}
+
+.left ul li {
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.left ul li i {
+    width: 25px;
+    color: bisque;
 }
